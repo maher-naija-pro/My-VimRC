@@ -5,7 +5,7 @@ set hlsearch
 set incsearch
 set history=1000
 set undolevels=1000
-filetype plugin indent on
+"filetype plugin indent on
 syntax on
 set ignorecase
 set noerrorbells
