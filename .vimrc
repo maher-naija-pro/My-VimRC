@@ -1,9 +1,15 @@
 "install plugins
+"#install this on mac 
+"#curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 call plug#begin()
 Plug 'jiangmiao/auto-pairs'
 Plug 'frazrepo/vim-rainbow'
+Plug 'farmergreg/vim-lastplace'
 call plug#end()
+"# install plugins execute :PlugInstall
+
+
 
 "activate rainbow
 let g:rainbow_active = 1
@@ -23,3 +29,5 @@ set noerrorbells
 set title
 set noswapfile
 set backupdir=~/.cache/vimset incsearch
+
+
