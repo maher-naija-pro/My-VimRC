@@ -1,3 +1,14 @@
+"install plugins
+
+call plug#begin()
+Plug 'jiangmiao/auto-pairs'
+Plug 'frazrepo/vim-rainbow'
+call plug#end()
+
+"activate rainbow
+let g:rainbow_active = 1
+
+"set params
 set backspace=indent,eol,start
 set expandtab
 set tabstop=4
