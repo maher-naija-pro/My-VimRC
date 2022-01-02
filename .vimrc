@@ -41,5 +41,12 @@ set incsearch
 
 
 "## key mapping
-"# map control v to s to inter visual block mode
-map s  <C-v>
+"How to: 1/ b to inter block mode 
+"        2/ sellect your bloc with arrows
+"        3 / inter your comment caracter
+"# map control v to b to inter visual block mode
+nmap b  <C-v>
+"# map comment caracter  to  accelerate commenting
+vmap #  <S-i>#<Esc><Esc>
+vmap //  <S-i>//<Esc><Esc>
+vmap "  <S-i>"<Esc><Esc>
