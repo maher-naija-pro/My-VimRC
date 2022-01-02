@@ -14,14 +14,14 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
-" install plugins execute :PlugInstall
+"##install plugins execute :PlugInstall
 
 
 
 "activate rainbow
 let g:rainbow_active = 1
 
-"set params
+"##set params
 
 set backspace=indent,eol,start
 set expandtab
@@ -30,12 +30,16 @@ set hlsearch
 set incsearch
 set history=1000
 set undolevels=1000
-"filetype plugin indent on
+"##filetype plugin indent on
 syntax on
 set ignorecase
 set noerrorbells
 set title
 set noswapfile
-set backupdir=~/.cache/vimset incsearch
+set backupdir=~/.cache/vim
+set incsearch
 
 
+"## key mapping
+"# map control v to s to inter visual block mode
+map s  <C-v>
