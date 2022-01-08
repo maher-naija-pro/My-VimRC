@@ -50,3 +50,11 @@ nmap b  <C-v>
 vmap #  <S-i>#<Esc><Esc>
 vmap //  <S-i>//<Esc><Esc>
 vmap "  <S-i>"<Esc><Esc>
+
+"function! s:Com(debut,fin)
+"     a:debut,a:fins/^\([^#].*\)/#&/
+"endfunction
+
+command Com  execute com
+command Comall  execute "%s/^\([^#].*\)/#&/"
+command Nu execute 'set nu'
