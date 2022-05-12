@@ -12,6 +12,8 @@ Plug 'farmergreg/vim-lastplace'
 " barre sous vim
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'SirVer/ultisnips'
+Plug 'keelii/vim-snippets'
 
 call plug#end()
 "##install plugins execute :PlugInstall
@@ -55,6 +57,7 @@ vmap "  <S-i>"<Esc><Esc>
 "     a:debut,a:fins/^\([^#].*\)/#&/
 "endfunction
 
-command Com  execute com
-command Comall  execute "%s/^\([^#].*\)/#&/"
-command Nu execute 'set nu'
+command Cc  execute com
+command Ccall  execute "%s/^\([^#].*\)/#&/"
+command Cn execute 'set nu'
+command Cd execute 't.'
