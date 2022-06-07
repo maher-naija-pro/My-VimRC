@@ -13,11 +13,26 @@ Plug 'farmergreg/vim-lastplace'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'SirVer/ultisnips'
+"##################################
+Plug 'SirVer/ultisnips'
 Plug 'keelii/vim-snippets'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsAddFiletypes="tf.snippets" 
+"##################################
 
 call plug#end()
 "##install plugins execute :PlugInstall
 
+" Tell vim to remember certain things when we exit
+"  '10  :  marks will be remembered for up to 10 previously edited files
+"  "100 :  will save up to 100 lines for each register
+"  :20  :  up to 20 lines of command-line history will be remembered
+"  %    :  saves and restores the buffer list
+"  n... :  where to save the viminfo files
+set viminfo='100,\"1000,:40,%,n/.viminfo
 
 
 "activate rainbow
@@ -26,20 +41,18 @@ let g:rainbow_active = 1
 "##set params
 
 set backspace=indent,eol,start
-set expandtab
-set tabstop=4
+"set expandtab
+"set tabstop=4
 set hlsearch
 set incsearch
 set history=1000
 set undolevels=1000
-"##filetype plugin indent on
 syntax on
 set ignorecase
 set noerrorbells
 set title
 set noswapfile
 set backupdir=~/.cache/vim
-set incsearch
 
 
 "## key mapping
@@ -53,9 +66,6 @@ vmap #  <S-i>#<Esc><Esc>
 vmap //  <S-i>//<Esc><Esc>
 vmap "  <S-i>"<Esc><Esc>
 
-"function! s:Com(debut,fin)
-"     a:debut,a:fins/^\([^#].*\)/#&/
-"endfunction
 
 command Cc  execute com
 command Ccall  execute "%s/^\([^#].*\)/#&/"
