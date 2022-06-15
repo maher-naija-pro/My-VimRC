@@ -12,14 +12,13 @@ Plug 'farmergreg/vim-lastplace'
 " barre sous vim
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'SirVer/ultisnips'
 "#############################
-"ident plugin
-Plug 'Yggdroot/indentLine'
-let g:indentLine_color_term = 120
-let g:indentLine_concealcursor = 'inc'
-let g:indentLine_conceallevel = 2
-let g:indentLine_char_list = ['...┆']
+""ident plugin
+"Plug 'Yggdroot/indentLine'
+"let g:indentLine_color_term = 120
+"let g:indentLine_concealcursor = 'inc'
+"let g:indentLine_conceallevel = 2
+"let g:indentLine_char_list = ['┆']
 "##################################
 Plug 'SirVer/ultisnips'
 Plug 'keelii/vim-snippets'
@@ -57,7 +56,7 @@ let g:rainbow_active = 1
 set hlsearch
 set incsearch
 " Ignore case when searching
-"set ignorecase
+set ignorecase
 "set smartcase
 " Show matching bracets
 "set showmatch
