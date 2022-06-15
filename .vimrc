@@ -46,9 +46,9 @@ let g:rainbow_active = 1
 
 "##set params
 
-"set backspace=indent,eol,start
-"set expandtab
-"set tabstop=4
+set backspace=indent,eol,start
+set expandtab
+set tabstop=4
 
 
 
@@ -57,9 +57,9 @@ set hlsearch
 set incsearch
 " Ignore case when searching
 set ignorecase
-"set smartcase
+set smartcase
 " Show matching bracets
-"set showmatch
+set showmatch
 
 set history=1000
 set undolevels=1000
