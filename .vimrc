@@ -88,4 +88,4 @@ command Cc  execute com
 command Ccall  execute "%s/^\([^#].*\)/#&/"
 command Cn execute 'set nu'
 command Cd execute 't.'
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+nnoremap <F3> :set invnumber<CR>
