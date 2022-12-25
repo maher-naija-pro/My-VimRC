@@ -12,6 +12,9 @@ Plug 'farmergreg/vim-lastplace'
 " barre sous vim
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+"terrafrom plugin
+Plug 'hashivim/vim-terraform' 
+let g:terraform_fmt_on_save=1
 "#############################
 ""ident plugin
 "Plug 'Yggdroot/indentLine'
@@ -78,14 +81,23 @@ set backupdir=~/.cache/vim
 "        3 / inter your comment caracter
 "# map control v to b to inter visual block mode
 nmap b  <C-v>
+
+
 "# map comment caracter  to  accelerate commenting
 vmap #  <S-i>#<Esc><Esc>
 vmap //  <S-i>//<Esc><Esc>
 vmap "  <S-i>"<Esc><Esc>
 
-
+"cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 command Cc  execute com
 command Ccall  execute "%s/^\([^#].*\)/#&/"
 command Cn execute 'set nu'
 command Cd execute 't.'
+
+
+"key""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <F3> :set invnumber<CR>
+
+
+"autocmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufWritePre *.tf  :%! echo hello
