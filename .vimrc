@@ -101,3 +101,6 @@ nnoremap <F3> :set invnumber<CR>
 
 "autocmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufWritePre *.tf  :%! echo hello
+" bash skeleton
+autocmd BufNewFile *.sh,*.bash  :%! echo '\#\!/usr/bin/bash'
+autocmd BufNewFile *.py  :%! echo '\#\!/usr/bin/python'
