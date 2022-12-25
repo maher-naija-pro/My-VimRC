@@ -104,4 +104,4 @@ autocmd BufWritePre *.tf  :%! echo hello
 " skeletons
 autocmd BufNewFile *.sh,*.bash  :%! echo '\#\!/usr/bin/bash'
 autocmd BufNewFile *.py  :%! echo '\#\!/usr/bin/python'
-autocmd BufNewFile main.py 0r ~/.vim/skeleton.py
+autocmd BufNewFile main.py 0r ~/backup_vimrc/skeleton.py
