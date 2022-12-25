@@ -93,6 +93,8 @@ command Cc  execute com
 command Ccall  execute "%s/^\([^#].*\)/#&/"
 command Cn execute 'set nu'
 command Cd execute 't.'
+command Wq execute 'wq!'
+command Q execute 'q!'
 
 
 "key""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
