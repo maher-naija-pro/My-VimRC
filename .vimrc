@@ -1,29 +1,27 @@
-"install plugins
-"#install this on mac 
-"#curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+""install plugins
+""install this on mac 
+""curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 call plug#begin()
-"ferme (  
 Plug 'jiangmiao/auto-pairs'
-" color ()
 Plug 'frazrepo/vim-rainbow'
-" return last place
+"" return last place
 Plug 'farmergreg/vim-lastplace'
-" barre sous vim
+"" barre sous vim
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-"terrafrom plugin
+""terrafrom plugin
 Plug 'hashivim/vim-terraform' 
 let g:terraform_fmt_on_save=1
 "#############################
 ""ident plugin
-"Plug 'Yggdroot/indentLine'
-"let g:indentLine_color_term = 120
-"let g:indentLine_concealcursor = 'inc'
-"let g:indentLine_conceallevel = 2
-"let g:indentLine_char_list = ['┆']
+Plug 'Yggdroot/indentLine'
+let g:indentLine_color_term = 120
+let g:indentLine_concealcursor = 'inc'
+let g:indentLine_conceallevel = 2
+let g:indentLine_char_list = ['┆']
 "##################################
-Plug 'SirVer/ultisnips'
+""Plug 'SirVer/ultisnips'
 Plug 'keelii/vim-snippets'
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -33,21 +31,21 @@ let g:UltiSnipsAddFiletypes="tf.snippets"
 "##################################
 
 call plug#end()
-"##install plugins execute :PlugInstall
+""install plugins execute :PlugInstall
 
-" Tell vim to remember certain things when we exit
-"  '10  :  marks will be remembered for up to 10 previously edited files
-"  "100 :  will save up to 100 lines for each register
-"  :20  :  up to 20 lines of command-line history will be remembered
-"  %    :  saves and restores the buffer list
-"  n... :  where to save the viminfo files
-"set viminfo='100,\"1000,:40,%,n/.viminfo
+"" Tell vim to remember certain things when we exit
+""  '10  :  marks will be remembered for up to 10 previously edited files
+""  "100 :  will save up to 100 lines for each register
+""  :20  :  up to 20 lines of command-line history will be remembered
+""  %    :  saves and restores the buffer list
+""  n... :  where to save the viminfo files
+""set viminfo='100,\"1000,:40,%,n/.viminfo
 
 
-"activate rainbow
+""activate rainbow
 let g:rainbow_active = 1
 
-"##set params
+""set params
 
 set backspace=indent,eol,start
 set expandtab
@@ -55,55 +53,54 @@ set tabstop=4
 
 
 
-" Set partial search and result highlighting
+""Set partial search and result highlighting
 set hlsearch
 set incsearch
-" Ignore case when searching
+""Ignore case when searching
 set ignorecase
 set smartcase
-" Show matching bracets
+""Show matching bracets
 set showmatch
 
 set history=1000
 set undolevels=1000
 syntax on
 
-" Disable bells
+""Disable bells
 set noerrorbells
 set title
 set noswapfile
 set backupdir=~/.cache/vim
 
 
-"## key mapping
-"How to: 1/ b to inter block mode 
-"        2/ sellect your bloc with arrows
-"        3 / inter your comment caracter
-"# map control v to b to inter visual block mode
+"" key mapping
+""How to: 1/ b to inter block mode 
+""        2/ sellect your bloc with arrows
+""        3 / inter your comment caracter
+"" map control v to b to inter visual block mode
 nmap b  <C-v>
 
 
-"# map comment caracter  to  accelerate commenting
+"" map comment caracter  to  accelerate commenting
 vmap #  <S-i>#<Esc><Esc>
 vmap //  <S-i>//<Esc><Esc>
 vmap "  <S-i>"<Esc><Esc>
 
-"cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 command Cc  execute com
-command Ccall  execute "%s/^\([^#].*\)/#&/"
+""command Ccall  execute "%s/^\([^#].*\)/#&/"
 command Cn execute 'set nu'
 command Cd execute 't.'
 command Wq execute 'wq!'
-command Q execute 'q!'
+""command Q execute 'q!'
 
 
-"key""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""key""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <F3> :set invnumber<CR>
 
 
 "autocmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd BufWritePre *.tf  :%! echo hello
+""autocmd BufWritePre *.tf  :%! echo hello
 " skeletons
 autocmd BufNewFile *.sh,*.bash  :%! echo '\#\!/usr/bin/bash'
 autocmd BufNewFile *.py  :%! echo '\#\!/usr/bin/python'
-autocmd BufNewFile main.py 0r ~/backup_vimrc/skeleton.py
