@@ -89,9 +89,9 @@ vmap "  <S-i>"<Esc><Esc>
 ""cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 command Cc  execute com
 ""command Ccall  execute "%s/^\([^#].*\)/#&/"
-command Cn execute 'set nu'
+command CN execute 'set nu'
 command Cd execute 't.'
-command Wq execute 'wq!'
+command W execute 'wq!'
 ""command Q execute 'q!'
 
 
