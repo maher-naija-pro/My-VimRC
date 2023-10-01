@@ -39,8 +39,8 @@ call plug#end()
 ""  :20  :  up to 20 lines of command-line history will be remembered
 ""  %    :  saves and restores the buffer list
 ""  n... :  where to save the viminfo files
-set viminfo='100,\"1000,:100,%,n/.viminfo
 
+set viminfo='1,\"1000,:100,%,n~/.viminfo
 
 ""activate rainbow
 let g:rainbow_active = 1
@@ -50,8 +50,6 @@ let g:rainbow_active = 1
 set backspace=indent,eol,start
 set expandtab
 set tabstop=4
-set mouse=a
-
 
 
 ""Set partial search and result highlighting
@@ -90,14 +88,13 @@ vmap "  <S-i>"<Esc><Esc>
 ""cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 command Cc  execute com
 ""command Ccall  execute "%s/^\([^#].*\)/#&/"
-command CN execute 'set nu'
-command Cd execute 't.'
+command NU execute 'set nu'
+"" ducplicate ligne
+command D execute 't.'
+"" quit and save+
 command W execute 'wq!'
-""command Q execute 'q!'
-
-
-""key""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <F3> :set invnumber<CR>
+"" quit
+command Q execute 'q!'
 
 
 "autocmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
