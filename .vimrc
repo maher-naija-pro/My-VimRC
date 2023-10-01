@@ -3,7 +3,9 @@
 ""curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 call plug#begin()
+""auto pair"
 Plug 'jiangmiao/auto-pairs'
+""parentaise color degradee"
 Plug 'frazrepo/vim-rainbow'
 "" return last place
 Plug 'farmergreg/vim-lastplace'
@@ -21,7 +23,6 @@ let g:indentLine_concealcursor = 'inc'
 let g:indentLine_conceallevel = 2
 let g:indentLine_char_list = ['┆']
 "##################################
-""Plug 'SirVer/ultisnips'
 Plug 'keelii/vim-snippets'
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -29,7 +30,7 @@ let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsAddFiletypes="tf.snippets" 
 "##################################
-
+Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 ""install plugins execute :PlugInstall
 
@@ -95,7 +96,8 @@ command D execute 't.'
 command W execute 'wq!'
 "" quit
 command Q execute 'q!'
-
+"" instal plugin"
+command P execute 'PlugInstall'
 
 "autocmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""autocmd BufWritePre *.tf  :%! echo hello
