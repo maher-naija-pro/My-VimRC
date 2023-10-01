@@ -39,7 +39,7 @@ call plug#end()
 ""  :20  :  up to 20 lines of command-line history will be remembered
 ""  %    :  saves and restores the buffer list
 ""  n... :  where to save the viminfo files
-""set viminfo='100,\"1000,:40,%,n/.viminfo
+set viminfo='100,\"1000,:100,%,n/.viminfo
 
 
 ""activate rainbow
@@ -50,6 +50,7 @@ let g:rainbow_active = 1
 set backspace=indent,eol,start
 set expandtab
 set tabstop=4
+set mouse=a
 
 
 
@@ -62,8 +63,8 @@ set smartcase
 ""Show matching bracets
 set showmatch
 
-set history=1000
-set undolevels=1000
+set history=10000
+set undolevels=10000
 syntax on
 
 ""Disable bells
