@@ -28,10 +28,12 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsAddFiletypes="tf.snippets" 
+let g:UltiSnipsAddFiletypes="tf.snippets"
 "##################################
 Plug 'ntpeters/vim-better-whitespace'
+let g:better_whitespace_ctermcolor='red'
 call plug#end()
+
 ""install plugins execute :PlugInstall
 
 "" Tell vim to remember certain things when we exit
