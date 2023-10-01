@@ -73,15 +73,40 @@ set noerrorbells
 set title
 set noswapfile
 set backupdir=~/.cache/vim
+"############################################""
+"how to remap keys
+"{cmd} {attr} {lhs} {rhs}
+"where
+"{cmd}  is one of ':map', ':map!', ':nmap', ':vmap', ':imap',
+"       ':cmap', ':smap', ':xmap', ':omap', ':lmap', etc.
+"{attr} is optional and one or more of the following: <buffer>, <silent>,
+"       <expr> <script>, <unique> and <special>.
+"       More than one attribute can be specified to a map.
+"{lhs}  left hand side, is a sequence of one or more keys that you will use
+"       in your new shortcut.
+"{rhs}  right hand side, is the sequence of keys that the {lhs} shortcut keys
+"       will execute when entered.
+
+"###########################################################################"
+
+":nmap Display normal mode maps
+":imap Display insert mode maps
+":vmap Display visual and select mode maps
+":smap Display select mode maps
+":xmap Display visual mode maps
+":cmap Display command mode maps
+":omap Display operator pending mode maps
 
 
+""
 "" key mapping
 ""How to: 1/ b to inter block mode 
 ""        2/ sellect your bloc with arrows
 ""        3 / inter your comment caracter
 "" map control v to b to inter visual block mode
 nmap b  <C-v>
-
+"go endfile on noraml mode
+nmap e  <S-g>
 
 "" map comment caracter  to  accelerate commenting
 vmap #  <S-i>#<Esc><Esc>
@@ -98,6 +123,7 @@ command W execute 'wq!'
 command Q execute 'q!'
 "" instal plugin"
 command P execute 'PlugInstall'
+
 
 
 "autocmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
