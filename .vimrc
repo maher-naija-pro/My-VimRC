@@ -89,8 +89,6 @@ vmap //  <S-i>//<Esc><Esc>
 vmap "  <S-i>"<Esc><Esc>
 
 ""cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-command Cc  execute com
-""command Ccall  execute "%s/^\([^#].*\)/#&/"
 command NU execute 'set nu'
 "" ducplicate ligne
 command D execute 't.'
@@ -100,6 +98,7 @@ command W execute 'wq!'
 command Q execute 'q!'
 "" instal plugin"
 command P execute 'PlugInstall'
+
 
 "autocmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""autocmd BufWritePre *.tf  :%! echo hello
