@@ -143,15 +143,18 @@ nmap c :execute  't.'<CR>
 vmap #  <S-i>#<Esc><Esc>
 vmap //  <S-i>//<Esc><Esc>
 vmap "  <S-i>"<Esc><Esc>
-
 "set nu
 nmap n :execute  'set nu'<CR>
-" quit and save
+"" quit and save
 nmap w :execute  'wq!'<CR>
 "quitwithout save
 nmap q :execute  'q!'<CR>
-" install plugin
+"" install plugin
 nmap p :execute  'PlugInstall'<CR>
+
+""cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" instal plugin"
+command P execute 'PlugInstall'
 
 
 
