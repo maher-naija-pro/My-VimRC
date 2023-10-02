@@ -1,4 +1,4 @@
-<F2>""install plugins
+""install plugins
 ""install this on mac 
 ""curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -20,7 +20,7 @@ let g:terraform_fmt_on_save=1
 Plug 'Yggdroot/indentLine'
 let g:indentLine_color_term = 120
 let g:indentLine_concealcursor = 'inc'
-let g:indentLine_conceallevel = 2
+let g:indentLine_conceallevel = 0
 let g:indentLine_char_list = ['']
 "##################################
 Plug 'keelii/vim-snippets'
@@ -97,7 +97,7 @@ syntax on
 set foldmarker={,}
 
 " Enable line wrapping
-set wrap
+"set wrap
 ""Disable bells
 set noerrorbells
 set title
