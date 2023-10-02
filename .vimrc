@@ -137,22 +137,21 @@ set backupdir=~/.cache/vim
 nmap b  <C-v>
 "go endfile on noraml mode
 nmap e  <S-g>
-
+"duplicate curent lign
+nmap c :execute  't.'<CR>
 "" map comment caracter  to  accelerate commenting
 vmap #  <S-i>#<Esc><Esc>
 vmap //  <S-i>//<Esc><Esc>
 vmap "  <S-i>"<Esc><Esc>
 
-""cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-command NU execute 'set nu'
-"" ducplicate ligne
-command D execute 't.'
-"" quit and save+
-command W execute 'wq!'
-"" quit
-command Q execute 'q!'
-"" instal plugin"
-command P execute 'PlugInstall'
+"set nu
+nmap n :execute  'set nu'<CR>
+" quit and save
+nmap w :execute  'wq!'<CR>
+"quitwithout save
+nmap q :execute  'q!'<CR>
+" install plugin
+nmap p :execute  'PlugInstall'<CR>
 
 
 
