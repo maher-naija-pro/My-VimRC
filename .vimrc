@@ -1,4 +1,4 @@
-""install plugins
+<F2>""install plugins
 ""install this on mac 
 ""curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -21,7 +21,7 @@ Plug 'Yggdroot/indentLine'
 let g:indentLine_color_term = 120
 let g:indentLine_concealcursor = 'inc'
 let g:indentLine_conceallevel = 2
-let g:indentLine_char_list = ['┆']
+let g:indentLine_char_list = ['']
 "##################################
 Plug 'keelii/vim-snippets'
 let g:UltiSnipsExpandTrigger="<tab>"
