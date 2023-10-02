@@ -55,6 +55,16 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+"hange cursor shape in insert mode
+augroup ChangeCursorShape
+  autocmd!
+  autocmd InsertEnter * set cursorline
+  autocmd InsertLeave * set nocursorline
+  autocmd VimEnter * set  nocursorline
+augroup END
+" Customize cursorline highlighting
+highlight CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=Red
+
 " Enable clipboard integration
 set clipboard=unnamedplus
 
@@ -74,7 +84,7 @@ set smartcase
 ""Show matching bracets
 set showmatch
 " Auto-indent when starting a new line
-set autoindent
+"set autoindent
 
 "history
 set history=10000
