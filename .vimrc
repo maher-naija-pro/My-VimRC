@@ -60,8 +60,8 @@ augroup ChangeCursorShape
   autocmd!
   autocmd InsertEnter * set cursorline
   autocmd InsertLeave * set nocursorline
-  autocmd VimEnter * set  nocursorline
 augroup END
+
 " Customize cursorline highlighting
 highlight CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=Red
 
@@ -151,12 +151,12 @@ nmap w :execute  'wq!'<CR>
 nmap q :execute  'q!'<CR>
 "" install plugin
 nmap p :execute  'PlugInstall'<CR>
+" r to cancel undo 
+nmap r <C-R>
 
 ""cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" instal plugin"
 command P execute 'PlugInstall'
-
-
 
 "autocmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""autocmd BufWritePre *.tf  :%! echo hello
