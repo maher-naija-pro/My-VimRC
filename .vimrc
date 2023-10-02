@@ -144,13 +144,13 @@ vmap #  <S-i>#<Esc><Esc>
 vmap //  <S-i>//<Esc><Esc>
 vmap "  <S-i>"<Esc><Esc>
 "set nu
-nmap n :execute  'set nu'<CR>
+nmap N :execute  'set nu'<CR>
 "" quit and save
 nmap w :execute  'wq!'<CR>
 "quitwithout save
 nmap q :execute  'q!'<CR>
 "" install plugin
-nmap p :execute  'PlugInstall'<CR>
+nmap P :execute  'PlugInstall'<CR>
 " r to cancel undo 
 nmap r <C-R>
 
