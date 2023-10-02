@@ -142,15 +142,16 @@ nmap e  <S-g>
 vmap #  <S-i>#<Esc><Esc>
 vmap //  <S-i>//<Esc><Esc>
 vmap "  <S-i>"<Esc><Esc>
+"set nu
+nmap n :execute  'set nu'<CR>
+"" quit and save
+nmap w :execute  'wq!'<CR>
+"quitwithout save
+nmap q :execute  'q!'<CR>
+"" install plugin
+nmap p :execute  'PlugInstall'<CR>
 
 ""cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-command NU execute 'set nu'
-"" ducplicate ligne
-command D execute 't.'
-"" quit and save+
-command W execute 'wq!'
-"" quit
-command Q execute 'q!'
 "" instal plugin"
 command P execute 'PlugInstall'
 
