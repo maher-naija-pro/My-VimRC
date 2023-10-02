@@ -53,9 +53,19 @@ let g:rainbow_active = 1
 set backspace=indent,eol,start
 set expandtab
 set tabstop=4
+set shiftwidth=4
 
+" Enable clipboard integration
+set clipboard=unnamedplus
 
-""Set partial search and result highlighting
+" Enable file type detection and plugins
+filetype plugin on
+
+"
+""Setble line and column number display in the status line
+set ruler
+
+"partial search and result highlighting
 set hlsearch
 set incsearch
 ""Ignore case when searching
@@ -63,11 +73,21 @@ set ignorecase
 set smartcase
 ""Show matching bracets
 set showmatch
+" Auto-indent when starting a new line
+set autoindent
 
+"history
 set history=10000
 set undolevels=10000
+
+"syntax
 syntax on
 
+" Define marker symbols for folding
+set foldmarker={,}
+
+" Enable line wrapping
+set wrap
 ""Disable bells
 set noerrorbells
 set title
