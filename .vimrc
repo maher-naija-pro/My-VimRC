@@ -50,10 +50,10 @@ let g:rainbow_active = 1
 
 ""set params
 
-"set backspace=indent,eol,start
-"set expandtab
-"set tabstop=4
-"set shiftwidth=4
+set backspace=indent,eol,start
+set expandtab
+set tabstop=4
+set shiftwidth=4
 
 "hange cursor shape in insert mode
 autocmd InsertEnter * set cursorline
@@ -92,7 +92,7 @@ syntax on
 set foldmarker={,}
 
 " Enable line wrapping
-"set wrap
+set wrap
 ""Disable bells
 set noerrorbells
 set title
