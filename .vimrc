@@ -1,3 +1,4 @@
+
 ""install plugins
 ""install this on mac 
 ""curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -12,9 +13,6 @@ Plug 'farmergreg/vim-lastplace'
 "" barre sous vim
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-""terrafrom plugin
-Plug 'hashivim/vim-terraform' 
-let g:terraform_fmt_on_save=1
 "#############################
 ""ident plugin
 Plug 'Yggdroot/indentLine'
