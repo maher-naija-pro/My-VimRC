@@ -50,23 +50,19 @@ let g:rainbow_active = 1
 
 ""set params
 
-set backspace=indent,eol,start
-set expandtab
-set tabstop=4
-set shiftwidth=4
+"set backspace=indent,eol,start
+"set expandtab
+"set tabstop=4
+"set shiftwidth=4
 
 "hange cursor shape in insert mode
-augroup ChangeCursorShape
-  autocmd!
-  autocmd InsertEnter * set cursorline
-  autocmd InsertLeave * set nocursorline
-augroup END
+autocmd InsertEnter * set cursorline
+autocmd InsertLeave * set nocursorline
+
 
 " Customize cursorline highlighting
 highlight CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=Red
 
-" Enable clipboard integration
-set clipboard=unnamedplus
 
 " Enable file type detection and plugins
 filetype plugin on
@@ -84,8 +80,7 @@ set smartcase
 ""Show matching bracets
 set showmatch
 " Auto-indent when starting a new line
-"set autoindent
-
+set autoindent
 "history
 set history=10000
 set undolevels=10000
