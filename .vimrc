@@ -123,6 +123,7 @@ set backupdir=~/.cache/vim
 
 ""
 "" key mapping
+
 ""How to: 1/ b to inter block mode 
 ""        2/ sellect your bloc with arrows
 ""        3 / inter your comment caracter
@@ -144,10 +145,12 @@ nmap w :execute  'wq!'<CR>
 nmap q :execute  'q!'<CR>
 "" install plugin
 nmap P :execute  'PlugInstall'<CR>
-" r to cancel undo 
+" r to cancel undo
 nmap r <C-R>
+"clean all spaces and l empty ligne
+nmap s  :execute '%s/^\n\\|^\s\+\n\\|\s\+$//g'<CR>
 
-""cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" instal plugin"
 command P execute 'PlugInstall'
 
