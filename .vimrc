@@ -149,13 +149,16 @@ nmap P :execute  'PlugInstall'<CR>
 nmap r <C-R>
 "clean all spaces and l empty ligne
 nmap s  :execute '%s/^\n\\|^\s\+\n\\|\s\+$//g'<CR>
-
 "cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" instal plugin"
-command P execute 'PlugInstall'
-
+"cmd to delete all spaces and /n
+command RMALLSPACES execute '%s/^\n\|^\s\+\n\|\s\+$//g'
+"cmd to replace string 
+command! -nargs=+ REPLACE call Sub(<f-args>)
+function! Sub( ...  )
+        execute printf('%%substitute/%s/%s/g', a:1, a:2)
+endfunction
 "autocmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""autocmd BufWritePre *.tf  :%! echo hello
 " skeletons
 autocmd BufNewFile *.sh,*.bash  :%! echo '\#\!/usr/bin/bash'
 autocmd BufNewFile *.py  :%! echo '\#\!/usr/bin/python'
