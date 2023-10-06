@@ -66,8 +66,11 @@ highlight CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=Red
 " Enable file type detection and plugins
 filetype plugin on
 
-"
-""Setble line and column number display in the status line
+" Send more characters for redraws
+set ttyfast
+" Enable mouse use in all modes
+set mouse=a
+"Setble line and column number display in the status line
 set ruler
 
 "partial search and result highlighting
