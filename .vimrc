@@ -4,6 +4,7 @@
 ""curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 call plug#begin()
+Plug 'mg979/vim-visual-multi', {'branch': 'master'} 
 ""auto pair"
 Plug 'jiangmiao/auto-pairs'
 ""parentaise color degradee"
@@ -13,7 +14,7 @@ Plug 'farmergreg/vim-lastplace'
 "" barre sous vim
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-"#############################
+""#############################
 ""ident plugin
 Plug 'Yggdroot/indentLine'
 let g:indentLine_color_term = 120
