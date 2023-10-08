@@ -69,7 +69,7 @@ filetype plugin on
 " Send more characters for redraws
 set ttyfast
 " Enable mouse use in all modes
-set mouse=a
+set mouse=vi 
 "Setble line and column number display in the status line
 set ruler
 
@@ -132,6 +132,7 @@ set backupdir=~/.cache/vim
 ""        2/ sellect your bloc with arrows
 ""        3 / inter your comment caracter
 "" map control v to b to inter visual block mode
+
 nmap b  <C-v>
 "go endfile on noraml mode
 nmap e  <S-g>
@@ -141,6 +142,7 @@ nmap c :execute  't.'<CR>
 vmap #  <S-i>#<Esc><Esc>
 vmap //  <S-i>//<Esc><Esc>
 vmap "  <S-i>"<Esc><Esc>
+
 "set nu
 nmap N :execute  'set nu'<CR>
 "" quit and save
