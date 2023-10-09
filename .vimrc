@@ -5,7 +5,8 @@
 
 call plug#begin()
 ""vim go"
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  } 
+Plug 'fatih/vim-go'
+""" execute this fori install :GoUpdateBinaries
 ""multi cursor"
 Plug 'mg979/vim-visual-multi', {'branch': 'master'} 
 ""auto pair"
@@ -158,6 +159,9 @@ nmap P :execute  'PlugInstall'<CR>
 nmap r <C-R>
 "clean all spaces and l empty ligne
 nmap s  :execute '%s/^\n\\|^\s\+\n\\|\s\+$//g'<CR>
+
+nmap e  :execute  'GoRun'<CR>  
+
 "cmd""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" instal plugin"
 "cmd to delete all spaces and /n
