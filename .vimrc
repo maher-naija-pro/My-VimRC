@@ -4,6 +4,9 @@
 ""curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 call plug#begin()
+""vim go"
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  } 
+""multi cursor"
 Plug 'mg979/vim-visual-multi', {'branch': 'master'} 
 ""auto pair"
 Plug 'jiangmiao/auto-pairs'
