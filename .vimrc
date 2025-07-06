@@ -175,3 +175,12 @@ endfunction
 " skeletons
 autocmd BufNewFile *.sh,*.bash  :%! echo '\#\!/usr/bin/bash'
 autocmd BufNewFile *.py  :%! echo '\#\!/usr/bin/python'
+
+
+if has("autocmd")
+  autocmd BufReadPost *
+        \ if line("'\"") > 0 && line("'\"") <= line("$") |
+        \   execute "normal! g`\"" |
+        \ endif
+endif
+
